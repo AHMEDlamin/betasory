@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ألعاب ومعالجات وكروت شاشة - Ahmed Lamin</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(30, 30, 47, 0.8), rgba(30, 30, 47, 1));
+            color: #eaeaea;
+            margin: 0;
+            padding: 0;
+            transition: background 0.3s ease;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #007BFF;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #00FF00;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #00FF00;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(41, 41, 61, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-top: 4px solid #007BFF;
+        }
+        h2 a {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        h2 a:hover {
+            background-color: #0056b3;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+        .specs, .requirements {
+            background-color: #1c1c2f;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .specs h3, .requirements h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #00FF00;
+        }
+        .compare-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .compare-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .section-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .section-container > div {
+            flex: 1;
+            margin: 10px;
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ألعاب ومعالجات وكروت شاشة</h1>
+    <p>بواسطة Ahmed Lamin</p>
+</header>
+
+<nav>
+    <a href="#games">الألعاب</a>
+    <a href="#processors">المعالجات</a>
+    <a href="#graphics">كروت الشاشة</a>
+</nav>
+
+<section id="games">
+    <h2><a href="#games">الألعاب</a></h2>
+    <div class="section-container">
+        <div>
+            <img src="https://via.placeholder.com/400x250?text=Game+1" alt="صورة لعبة 1" loading="lazy">
+            <div class="requirements">
+                <h3>اللعبة 1</h3>
+                <p><strong>المتطلبات الدنيا:</strong></p>
+                <ul>
+                    <li>نظام التشغيل: Windows 10</li>
+                    <li>المعالج: Intel Core i5-9400F</li>
+                    <li>الذاكرة: 8 جيجابايت RAM</li>
+                    <li>كرت الشاشة: NVIDIA GTX 1650</li>
+                    <li>التخزين: 50 جيجابايت</li>
+                </ul>
+            </div>
+        </div>
+        <!-- تكرار القسم مع تحديث الصور والتفاصيل لـ 10 ألعاب أخرى -->
+    </div>
+</section>
+
+<section id="processors">
+    <h2><a href="#processors">المعالجات</a></h2>
+    <div class="section-container">
+        <div>
+            <img src="https://www.intel.com/content/dam/www/central-libraries/us/en/images/2023/12/i9-14900k.png" alt="Intel Core i9-14900K" loading="lazy">
+            <div class="specs">
+                <h3>Intel Core i9-14900K</h3>
+                <p><strong>الأنوية:</strong> 24</p>
+                <p><strong>الخيوط:</strong> 32</p>
+                <p><strong>التردد الأساسي:</strong> 3.2 GHz</p>
+                <p><strong>التردد المعزز:</strong> 5.8 GHz</p>
+                <p><strong>الذاكرة المؤقتة:</strong> 36 ميجابايت</p>
+            </div>
+        </div>
+        <!-- تكرار القسم مع تحديث الصور والتفاصيل لبقية معالجات الجيل 14 -->
+    </div>
+</section>
+
+<section id="graphics">
+    <h2><a href="#graphics">كروت الشاشة</a></h2>
+    <div class="section-container">
+        <div>
+            <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/geforce-rtx-4090/geforce-rtx-4090-fe.png" alt="GeForce RTX 4090" loading="lazy">
+            <div class="specs">
+                <h3>GeForce RTX 4090</h3>
+                <p><strong>الذاكرة:</strong> 24 جيجابايت GDDR6X</p>
+                <p><strong>الأنوية:</strong> 16384 CUDA Cores</p>
+                <p><strong>التردد الأساسي:</strong> 2235 MHz</p>
+                <p><strong>التردد المعزز:</strong> 2520 MHz</p>
+            </div>
+        </div>
+        <!-- تكرار القسم مع تحديث الصور والتفاصيل لبقية كروت الشاشة من سلسلة RTX -->
+
+<!-- إضافة بعض الرسوم المتحركة البسيطة عند الانتقال بين الفئات -->
+<script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });    </div>
+</section>
+
+<footer>
+    <p>© 2024 ألعاب ومعالجات وكروت شاشة. جميع الحقوق محفوظة لـ Ahmed Lamin.</p>
+</footer>
+
+        });
+    });
+</script>
+
+</body>
+</html>
